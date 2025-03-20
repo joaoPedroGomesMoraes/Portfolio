@@ -13,6 +13,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end; /* os itens dentro da nav irão ficar no final da linha a direita */
+  position: sticky; /* acompanhar o scrol */
+  top: 0;
+  z-index: 9; /* passa por cima dos outros elementos */
 }
 .nav-list {
   display: flex;
@@ -96,4 +99,39 @@ body {
 .about div h2 {
   font-size: 32px;
   margin-bottom: 14px;
+}
+/* Meus projetos */
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+.projects p {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+.project-list {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  gap: 10px; /* Espaço entre as imagens */
+}
+.projects img {
+  width: 22%;
+  height: 200px;
+  opacity: 0.8;
+}
+.projects img:hover {
+  opacity: 1;
+  transition: 0.8s;
 }
