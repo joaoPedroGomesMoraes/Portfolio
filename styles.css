@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.nav {
+  background-color: #000;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* os itens dentro da nav irão ficar no final da linha a direita */
+}
+.nav-list {
+  display: flex;
+  align-items: center; /* alinhar no centro */
+  list-style: none;
+  margin-right: 28px;
+}
+.nav-list a {
+  text-decoration: none; /* tirar o traço debaixo do nome */
+  padding: 10px;
+  color: #ddd;
+}
+
+.nav-list :hover {
+  color: #fff;
+}
+/*fim header */
+/*começo main */
+.main {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("imagens/20191031092836796.jpg");
+  background-size: cover; /* para que o background-image ocupe toda a largura */
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding-top: 100px;
+  padding-left: 80px;
+}
+
+.main h1 {
+  color: black;
+  font-size: 38px;
+}
+
+.main p {
+  color: blue;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.call-to-action {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 0;
+  padding: 14px;
+  font-style: italic;
+  font-size: 18px;
+}
+.call-to-action:hover {
+  transform: scale(1.1); /*aumentar o tamanho */
+  transition: 0.9s; /* com uma transição de 0.9 segundos */
+}
+.main a {
+  text-decoration: none;
+  color: #181818;
+}
+/* final Main */
+/* começo sobre */
+
+.about {
+  background-color: #fff;
+  width: 100%;
+  padding: 80px 10%;
+  display: flex; /* divide os itens de uma div um ao lado do outro */
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about div {
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about img {
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.about div h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
