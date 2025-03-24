@@ -127,13 +127,13 @@ body {
   gap: 10px; /* Espaço entre as imagens */
 }
 .projects img {
-  width: 80%; /* Ajusta o tamanho das imagens em telas menores */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 300px; /* Tamanho fixo para garantir que todas as imagens tenham o mesmo tamanho */
+  height: 200px; /* Tamanho fixo */
   object-fit: cover;
 }
 .projects img:hover {
   opacity: 1;
-  transition: 0.8s;
+  transition: 0.8s ease-in-out;
 }
 .action {
   background-color: #181818;
@@ -197,7 +197,7 @@ body {
   /* inicio projetos */
 
   .projects img {
-    width: 25%;
+    width: 20%;
     height: auto;
     object-fit: cover;
     justify-content: center;
@@ -213,5 +213,18 @@ body {
   }
   footer p {
     margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects img {
+    width: 80%; /* Faz com que as imagens ocupem toda a largura disponível */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    opacity: 0.8;
+    border-radius: 8px; /* Deixa as bordas das imagens arredondadas */
+    transition: opacity 0.8s ease-in-out;
   }
 }
